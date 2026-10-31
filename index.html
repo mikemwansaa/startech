@@ -5,60 +5,97 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <!-- ======= Sentry Error Tracking (Loader Script) =======
-       Replace the src below with YOUR project's Loader Script:
-       Sentry.io -> Settings -> Projects -> (your project) -> SDK Setup -> Loader Script.
-       Extra config (sample rates, environment tag) lives in assets/js/sentry-init.js. -->
-  <script
-    src="https://js.sentry-cdn.com/YOUR_SENTRY_LOADER_PUBLIC_KEY.min.js"
-    crossorigin="anonymous"
-  ></script>
-  <script src="assets/js/sentry-init.js"></script>
-
   <title>Startech Communications | Zambia's Motorola-Authorized Comms &amp; Security Integrator</title>
   <meta content="Startech Communications is Zambia's authorized Motorola Solutions dealer and system integrator, delivering critical voice, RF engineering, CCTV and security infrastructure for mining, government and enterprise clients." name="description">
   <meta content="Motorola Zambia, two-way radio Zambia, MOTOTRBO, CCTV Zambia, RF engineering, tower construction, security systems Lusaka, Copperbelt" name="keywords">
+
+  <link rel="canonical" href="https://startechcom.vercel.app/">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0b3d63">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Startech Communications">
+  <meta property="og:locale" content="en_ZM">
+  <meta property="og:title" content="Startech Communications | Zambia's Motorola-Authorized Comms &amp; Security Integrator">
+  <meta property="og:description" content="Authorized Motorola Solutions dealer and system integrator: critical voice, RF engineering, CCTV and security infrastructure for mining, government and enterprise clients across Zambia.">
+  <meta property="og:url" content="https://startechcom.vercel.app/">
+  <meta property="og:image" content="https://startechcom.vercel.app/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Startech Communications: Zambia's Motorola-authorized comms and security integrator">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Startech Communications | Zambia's Motorola-Authorized Comms &amp; Security Integrator">
+  <meta name="twitter:description" content="Critical voice, RF engineering, CCTV and security infrastructure for mining, government and enterprise clients across Zambia.">
+  <meta name="twitter:image" content="https://startechcom.vercel.app/assets/img/og-image.jpg">
+
+  <!-- Structured data. TODO: add "telephone" and "streetAddress" once the real details are confirmed. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Startech Communications",
+    "url": "https://startechcom.vercel.app/",
+    "logo": "https://startechcom.vercel.app/assets/img/logo.png",
+    "image": "https://startechcom.vercel.app/assets/img/og-image.jpg",
+    "description": "Authorized Motorola Solutions dealer and system integrator delivering critical voice, RF engineering, CCTV and security infrastructure for mining, government and enterprise clients in Zambia.",
+    "foundingDate": "2012",
+    "address": { "@type": "PostalAddress", "addressLocality": "Lusaka", "addressCountry": "ZM" },
+    "areaServed": { "@type": "Country", "name": "Zambia" },
+    "knowsAbout": ["Two-way radio", "MOTOTRBO", "CCTV and security systems", "RF engineering", "Tower construction", "SLA maintenance and support"]
+  }
+  </script>
 
   <!-- Favicons -->
   <link rel="icon" href="assets/img/icon.ico">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <div id="progressBar"></div>
-  <div id="progressBarContainer"></div>
 </head>
 
 <body>
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
-    <div class="container d-flex align-items-center">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div id="progressBar"></div>
+  <div id="progressBarContainer"></div>
 
-      <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="Startech Communications" class="img-fluid"></a>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="topbar d-none d-lg-block">
+      <div class="container d-flex justify-content-between align-items-center">
+        <span><i class="icofont-clock-time" aria-hidden="true"></i> Mon&ndash;Fri, 08:00&ndash;17:00 CAT</span>
+        <span class="topbar-contact">
+          <!-- TODO: confirm the 24/7 SLA emergency number -->
+          <a href="tel:+260977123456" class="topbar-emergency"><i class="icofont-phone" aria-hidden="true"></i> 24/7 SLA emergency line: +260 977 123 456</a>
+          <a href="mailto:info@startechcomms.co.zm"><i class="icofont-ui-email" aria-hidden="true"></i> info@startechcomms.co.zm</a>
+        </span>
+      </div>
+    </div>
+    <div class="container d-flex align-items-center header-main">
+
+      <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="Startech Communications" class="img-fluid" width="40" height="40"></a>
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="index.html">Home</a></li>
           <li><a href="#about">About Us</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#footer">Contact</a></li>
+          <li><a href="#industries">Industries</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
-      <a href="#footer" class="get-started-btn scrollto">Get In Touch</a>
+      <a href="#contact" class="get-started-btn scrollto">Get In Touch</a>
 
     </div>
   </header><!-- End Header -->
@@ -71,8 +108,9 @@
         <div class="col-lg-8 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
           <h1>Zambia's Motorola-Authorized Comms &amp; Security Integrator</h1>
           <h2>Engineering robust, mission-critical voice and data networks for mining, security, government, and enterprise clients across Zambia.</h2>
-          <div class="d-lg-flex">
-            <a href="#about" class="btn-get-started scrollto">Learn More</a>
+          <div class="hero-actions">
+            <a href="#contact" class="btn-get-started scrollto">Request a quote</a>
+            <a href="#services" class="btn-hero-secondary scrollto">Our services</a>
           </div>
         </div>
       </div>
@@ -178,7 +216,7 @@
               <ul>
 
                 <li>
-                  <a data-toggle="collapse" href="#accordion-list-3" class="collapsed"><span>#</span> Who We Are <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <a data-toggle="collapse" href="#accordion-list-3" class="collapsed" role="button" aria-expanded="false" aria-controls="accordion-list-3"><span>#</span> Who We Are <i class="icofont-rounded-down icon-show" aria-hidden="true"></i><i class="icofont-rounded-up icon-close" aria-hidden="true"></i></a>
                   <div id="accordion-list-3" class="collapse" data-parent=".accordion-list">
                     <p>
                       Startech Communications is an authorized Motorola Solutions dealer and system integrator based in Lusaka.
@@ -189,7 +227,7 @@
                 </li>
 
                 <li>
-                  <a data-toggle="collapse" class="collapse" href="#accordion-list-1"><span>#</span> Why Choose Us <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <a data-toggle="collapse" href="#accordion-list-1" role="button" aria-expanded="true" aria-controls="accordion-list-1"><span>#</span> Why Choose Us <i class="icofont-rounded-down icon-show" aria-hidden="true"></i><i class="icofont-rounded-up icon-close" aria-hidden="true"></i></a>
                   <div id="accordion-list-1" class="collapse show" data-parent=".accordion-list">
                     <p>
                       100% genuine Motorola equipment backed by full manufacturer warranty, an in-country team of certified RF
@@ -200,7 +238,7 @@
                 </li>
 
                 <li>
-                  <a data-toggle="collapse" href="#accordion-list-2" class="collapsed"><span>#</span> Our Mission <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <a data-toggle="collapse" href="#accordion-list-2" class="collapsed" role="button" aria-expanded="false" aria-controls="accordion-list-2"><span>#</span> Our Mission <i class="icofont-rounded-down icon-show" aria-hidden="true"></i><i class="icofont-rounded-up icon-close" aria-hidden="true"></i></a>
                   <div id="accordion-list-2" class="collapse" data-parent=".accordion-list">
                     <p>
                       To connect Zambia's essential industries with uncompromising reliability — delivering enterprise-grade
@@ -225,7 +263,7 @@
 
         <div class="row">
           <div class="col-lg-6">
-            <img src="assets/img/about.png" class="img-fluid" alt="">
+            <img src="assets/img/about.png" class="img-fluid" alt="" width="800" height="565" loading="lazy">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 content">
             <h3>12+ years engineering Zambia's critical networks.</h3>
@@ -292,7 +330,7 @@
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="icofont-radio"></i></div>
-              <h4><a href="#services">Critical Voice &amp; MOTOTRBO Systems</a></h4>
+              <h4>Critical Voice &amp; MOTOTRBO Systems</h4>
               <p>Digital two-way radio networks and repeater infrastructure, MOTOTRBO trunking (Capacity Plus / Capacity Max), dispatch consoles and GPS fleet tracking, plus intrinsically safe (ATEX/TIA) radios for hazardous mining and oil/gas environments.</p>
             </div>
           </div>
@@ -300,7 +338,7 @@
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
               <div class="icon"><i class="icofont-cc-camera"></i></div>
-              <h4><a href="#services">CCTV &amp; Integrated Security Systems</a></h4>
+              <h4>CCTV &amp; Integrated Security Systems</h4>
               <p>Enterprise IP video surveillance with thermal perimeter protection, automatic license plate recognition (ALPR/LPR), biometric access control and barrier automation, plus command-and-control room and video wall integration.</p>
             </div>
           </div>
@@ -308,7 +346,7 @@
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
               <div class="icon"><i class="icofont-network-tower"></i></div>
-              <h4><a href="#services">RF Engineering &amp; Solar Tower Sites</a></h4>
+              <h4>RF Engineering &amp; Solar Tower Sites</h4>
               <p>Comprehensive site surveys, spectrum analysis and propagation modeling, heavy-duty lattice mast and guyed tower erection, high-throughput microwave backhaul links, and off-grid solar hybrid power for remote sites.</p>
             </div>
           </div>
@@ -316,7 +354,7 @@
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
             <div class="icon-box">
               <div class="icon"><i class="icofont-tools-alt-2"></i></div>
-              <h4><a href="#services">SLA Maintenance &amp; 24/7 Support</a></h4>
+              <h4>SLA Maintenance &amp; 24/7 Support</h4>
               <p>Customized preventative maintenance contracts, drive testing, coverage optimization and antenna alignment, advanced battery management and diagnostics, and a local inventory of spares with rapid-response field technicians.</p>
             </div>
           </div>
@@ -363,6 +401,81 @@
       </div>
     </section><!-- End Why Choose Us Detail Section -->
 
+    <!-- ======= Industries Section ======= -->
+    <section id="industries" class="industries">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Industries we serve</h2>
+          <p>The same engineering standard on every site, whether it is a mine shaft, a police command room or a farming estate.</p>
+        </div>
+
+        <ul class="industry-list row">
+          <li class="col-lg col-md-4 col-6">
+            <i class="icofont-mining" aria-hidden="true"></i>
+            <h3>Mining</h3>
+            <p>Radio coverage for underground and open-pit operations, intrinsically safe handsets and fleet tracking.</p>
+          </li>
+          <li class="col-lg col-md-4 col-6">
+            <i class="icofont-shield-alt" aria-hidden="true"></i>
+            <h3>Government &amp; security</h3>
+            <p>Secure two-way radio networks and CCTV control rooms for public-safety and security agencies.</p>
+          </li>
+          <li class="col-lg col-md-4 col-6">
+            <i class="icofont-energy-oil" aria-hidden="true"></i>
+            <h3>Oil &amp; gas</h3>
+            <p>ATEX/TIA-rated radios and monitoring for hazardous sites.</p>
+          </li>
+          <li class="col-lg col-md-6 col-6">
+            <i class="icofont-tractor" aria-hidden="true"></i>
+            <h3>Agriculture</h3>
+            <p>Wide-area radio coverage and perimeter security for estates and farms.</p>
+          </li>
+          <li class="col-lg col-md-6 col-12">
+            <i class="icofont-building-alt" aria-hidden="true"></i>
+            <h3>Enterprise</h3>
+            <p>Radio, CCTV and access control for campuses, warehouses and offices.</p>
+          </li>
+        </ul>
+
+      </div>
+    </section><!-- End Industries Section -->
+
+    <!-- ======= Process Section ======= -->
+    <section id="process" class="process">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>How a project runs</h2>
+          <p>From the first site visit to round-the-clock support, one in-country team stays accountable.</p>
+        </div>
+
+        <ol class="process-steps row">
+          <li class="col-lg-3 col-md-6">
+            <span class="step-no" aria-hidden="true">1</span>
+            <h3>Survey and RF study</h3>
+            <p>We visit the site, measure the radio environment and map where coverage is needed.</p>
+          </li>
+          <li class="col-lg-3 col-md-6">
+            <span class="step-no" aria-hidden="true">2</span>
+            <h3>System design</h3>
+            <p>We specify the radios, repeaters, towers, cameras and power, and agree the design with you.</p>
+          </li>
+          <li class="col-lg-3 col-md-6">
+            <span class="step-no" aria-hidden="true">3</span>
+            <h3>Install and commission</h3>
+            <p>Our technicians erect, install, align and test everything before hand-over.</p>
+          </li>
+          <li class="col-lg-3 col-md-6">
+            <span class="step-no" aria-hidden="true">4</span>
+            <h3>Support and maintain</h3>
+            <p>SLA contracts, preventive maintenance and rapid field response keep the system running.</p>
+          </li>
+        </ol>
+
+      </div>
+    </section><!-- End Process Section -->
+
     <!-- ======= Cta Section ======= -->
     <section id="cta" class="cta">
       <div class="container" data-aos="zoom-in">
@@ -373,12 +486,115 @@
             <p>Get in touch with our technical engineering team for site surveys, system audits, or RF coverage planning across Lusaka and the Copperbelt.</p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#footer">Contact Our Engineers</a>
+            <a class="cta-btn align-middle" href="#contact">Contact Our Engineers</a>
           </div>
         </div>
 
       </div>
     </section><!-- End Cta Section -->
+
+    <!-- ======= Contact / Quote Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Request a quote</h2>
+          <p>Tell us about the site and what you need. An engineer will get back to you.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-5 contact-info">
+            <!-- TODO: replace the placeholder phone numbers and street addresses below with the real ones -->
+            <div class="contact-item">
+              <i class="icofont-location-pin" aria-hidden="true"></i>
+              <div>
+                <h3>Head office (Lusaka)</h3>
+                <p>Stand 1234, Great East Road, Rhodes Park<br>Lusaka, Zambia</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="icofont-location-pin" aria-hidden="true"></i>
+              <div>
+                <h3>Copperbelt hub (Kitwe)</h3>
+                <p>Plot 567, Kwacha Road, Kitwe, Zambia</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="icofont-phone" aria-hidden="true"></i>
+              <div>
+                <h3>Phone</h3>
+                <p><a href="tel:+260211123456">+260 211 123 456</a><br><a href="tel:+260977123456">+260 977 123 456</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="icofont-ui-email" aria-hidden="true"></i>
+              <div>
+                <h3>Email</h3>
+                <p><a href="mailto:info@startechcomms.co.zm">info@startechcomms.co.zm</a><br><a href="mailto:sales@startechcomms.co.zm">sales@startechcomms.co.zm</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="icofont-clock-time" aria-hidden="true"></i>
+              <div>
+                <h3>Hours</h3>
+                <p>Monday&ndash;Friday, 08:00&ndash;17:00 CAT.<br>The 24/7 SLA emergency line is for contracted clients.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <!-- TODO: data-whatsapp is the digits-only WhatsApp number; data-email is where emailed quotes go -->
+            <form id="quote-form" class="quote-form" data-whatsapp="260977123456" data-email="sales@startechcomms.co.zm" novalidate>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="qf-name">Your name</label>
+                  <input type="text" class="form-control" id="qf-name" name="name" autocomplete="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="qf-company">Company</label>
+                  <input type="text" class="form-control" id="qf-company" name="company" autocomplete="organization">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="qf-phone">Phone or WhatsApp</label>
+                  <input type="tel" class="form-control" id="qf-phone" name="phone" autocomplete="tel" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="qf-email">Email</label>
+                  <input type="email" class="form-control" id="qf-email" name="email" autocomplete="email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="qf-service">What do you need?</label>
+                <select class="form-control" id="qf-service" name="service" required>
+                  <option value="">Choose a service</option>
+                  <option>Critical voice &amp; MOTOTRBO systems</option>
+                  <option>CCTV &amp; integrated security</option>
+                  <option>RF engineering &amp; tower sites</option>
+                  <option>SLA maintenance &amp; support</option>
+                  <option>Something else</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="qf-message">About the site and your requirements</label>
+                <textarea class="form-control" id="qf-message" name="message" rows="4" required></textarea>
+              </div>
+
+              <div class="quote-actions">
+                <button type="button" class="btn-send btn-send-wa" data-channel="whatsapp"><i class="icofont-whatsapp" aria-hidden="true"></i> Send on WhatsApp</button>
+                <button type="button" class="btn-send btn-send-mail" data-channel="email"><i class="icofont-ui-email" aria-hidden="true"></i> Send by email</button>
+              </div>
+              <p class="form-hint">This opens WhatsApp or your email app with your message filled in, ready to send.</p>
+              <p class="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
 
     <!-- ======= Frequently Asked Questions Section ======= -->
     <section id="faq" class="faq section-bg">
@@ -392,7 +608,7 @@
         <div class="faq-list">
           <ul>
             <li data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3" class="collapsed">Where can I contact you? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="icofont-question-circle icon-help" aria-hidden="true"></i> <a data-toggle="collapse" href="#faq-list-3" class="collapsed" role="button" aria-expanded="false" aria-controls="faq-list-3">Where can I contact you? <i class="icofont-rounded-down icon-show" aria-hidden="true"></i><i class="icofont-rounded-up icon-close" aria-hidden="true"></i></a>
               <div id="faq-list-3" class="collapse" data-parent=".faq-list">
                 <p>
                   You can reach our head office in Lusaka or our Copperbelt hub in Kitwe by phone at <strong>+260 211 123 456</strong> or <strong>+260 977 123 456</strong>, or by email at <strong>info@startechcomms.co.zm</strong>.
@@ -401,7 +617,7 @@
             </li>
 
             <li data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-4" class="collapsed">What are your business hours? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="icofont-question-circle icon-help" aria-hidden="true"></i> <a data-toggle="collapse" href="#faq-list-4" class="collapsed" role="button" aria-expanded="false" aria-controls="faq-list-4">What are your business hours? <i class="icofont-rounded-down icon-show" aria-hidden="true"></i><i class="icofont-rounded-up icon-close" aria-hidden="true"></i></a>
               <div id="faq-list-4" class="collapse" data-parent=".faq-list">
                 <p>
                   Our offices are open <strong>Monday – Friday, 08:00 – 17:00 CAT</strong>. For urgent technical issues outside these hours, our <strong>24/7 SLA emergency line</strong> is available to contracted clients.
@@ -410,7 +626,7 @@
             </li>
 
             <li data-aos="fade-up" data-aos-delay="300">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-5" class="collapsed">Do you supply genuine Motorola equipment? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="icofont-question-circle icon-help" aria-hidden="true"></i> <a data-toggle="collapse" href="#faq-list-5" class="collapsed" role="button" aria-expanded="false" aria-controls="faq-list-5">Do you supply genuine Motorola equipment? <i class="icofont-rounded-down icon-show" aria-hidden="true"></i><i class="icofont-rounded-up icon-close" aria-hidden="true"></i></a>
               <div id="faq-list-5" class="collapse" data-parent=".faq-list">
                 <p>
                   Yes. As an <strong>official Motorola Solutions Authorized Partner</strong>, all radios, repeater spares and accessories we supply are 100% authentic and backed by full manufacturer warranty.
@@ -434,7 +650,7 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="Startech Communications" class="img-fluid"></a>
+            <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="Startech Communications" class="img-fluid" width="180" height="180" loading="lazy"></a>
             <p>
               Head Office (Lusaka) <br>
               Stand 1234, Great East Road, Rhodes Park <br>
@@ -447,21 +663,22 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#about">About Us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#footer">Contact Us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#about">Get to Know Us</a></li>
+              <li><i class="icofont-rounded-right" aria-hidden="true"></i> <a href="index.html">Home</a></li>
+              <li><i class="icofont-rounded-right" aria-hidden="true"></i> <a href="#about">About Us</a></li>
+              <li><i class="icofont-rounded-right" aria-hidden="true"></i> <a href="#services">Services</a></li>
+              <li><i class="icofont-rounded-right" aria-hidden="true"></i> <a href="#industries">Industries</a></li>
+              <li><i class="icofont-rounded-right" aria-hidden="true"></i> <a href="#process">How We Work</a></li>
+              <li><i class="icofont-rounded-right" aria-hidden="true"></i> <a href="#contact">Contact Us</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#services">Critical Voice &amp; MOTOTRBO</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#services">CCTV &amp; Security Systems</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#services">RF Engineering &amp; Towers</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#services">SLA Maintenance &amp; Support</a></li>
+              <li><i class="icofont-rounded-right" aria-hidden="true"></i> <a href="#services">Critical Voice &amp; MOTOTRBO</a></li>
+              <li><i class="icofont-rounded-right" aria-hidden="true"></i> <a href="#services">CCTV &amp; Security Systems</a></li>
+              <li><i class="icofont-rounded-right" aria-hidden="true"></i> <a href="#services">RF Engineering &amp; Towers</a></li>
+              <li><i class="icofont-rounded-right" aria-hidden="true"></i> <a href="#services">SLA Maintenance &amp; Support</a></li>
             </ul>
           </div>
 
@@ -470,13 +687,16 @@
             <p>
               Monday – Friday: 08:00 – 17:00 CAT <br>
               24/7 SLA Emergency Line Available <br><br>
-              info@startechcomms.co.zm <br>
-              sales@startechcomms.co.zm
+              <a href="tel:+260211123456">+260 211 123 456</a> <br>
+              <a href="tel:+260977123456">+260 977 123 456</a> <br><br>
+              <a href="mailto:info@startechcomms.co.zm">info@startechcomms.co.zm</a> <br>
+              <a href="mailto:sales@startechcomms.co.zm">sales@startechcomms.co.zm</a>
             </p>
             <div class="social-links mt-3">
-              <a href="mailto:info@startechcomms.co.zm" class="facebook"><i class="icofont-ui-email"></i></a>
-              <a href="tel:+260211123456" class="facebook"><i class="icofont-phone"></i></a>
-              <a href="tel:+260977123456" class="facebook"><i class="icofont-phone"></i></a>
+              <a href="mailto:info@startechcomms.co.zm" aria-label="Email Startech Communications"><i class="icofont-ui-email" aria-hidden="true"></i></a>
+              <a href="tel:+260211123456" aria-label="Call +260 211 123 456"><i class="icofont-phone" aria-hidden="true"></i></a>
+              <a href="tel:+260977123456" aria-label="Call +260 977 123 456"><i class="icofont-phone" aria-hidden="true"></i></a>
+              <a href="https://wa.me/260977123456" target="_blank" rel="noopener" aria-label="Chat with Startech on WhatsApp"><i class="icofont-whatsapp" aria-hidden="true"></i></a>
             </div>
           </div>
 
@@ -494,22 +714,24 @@
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+  <a href="#" class="back-to-top" aria-label="Back to top"><i class="icofont-arrow-up" aria-hidden="true"></i></a>
+
+  <!-- Quick contact buttons. TODO: update the number to match the real WhatsApp/phone number -->
+  <div class="fab-group">
+    <a class="fab fab-call d-md-none" href="tel:+260977123456" aria-label="Call Startech Communications"><i class="icofont-phone" aria-hidden="true"></i></a>
+    <a class="fab fab-wa" href="https://wa.me/260977123456?text=Hello%20Startech%2C%20I%27d%20like%20to%20ask%20about%20your%20services." target="_blank" rel="noopener" aria-label="Chat with Startech on WhatsApp"><i class="icofont-whatsapp" aria-hidden="true"></i></a>
+  </div>
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/contact.js"></script>
 
 </body>
 

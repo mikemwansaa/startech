@@ -13,6 +13,8 @@
     }
   });
 
+  var scrollDuration = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 1500;
+
   // Smooth scroll for the navigation menu and links with .scrollto classes
   var scrolltoOffset = $('#header').outerHeight() - 2;
   $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function(e) {
@@ -28,7 +30,7 @@
 
         $('html, body').animate({
           scrollTop: scrollto
-        }, 1500, 'easeInOutExpo');
+        }, scrollDuration, 'easeInOutExpo');
 
         if ($(this).parents('.nav-menu, .mobile-nav').length) {
           $('.nav-menu .active, .mobile-nav .active').removeClass('active');
@@ -53,7 +55,7 @@
         var scrollto = $(initial_nav).offset().top - scrolltoOffset;
         $('html, body').animate({
           scrollTop: scrollto
-        }, 1500, 'easeInOutExpo');
+        }, scrollDuration, 'easeInOutExpo');
       }
     }
   });
@@ -64,7 +66,7 @@
       class: 'mobile-nav d-lg-none'
     });
     $('body').append($mobile_nav);
-    $('body').prepend('<button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button>');
+    $('body').prepend('<button type="button" class="mobile-nav-toggle d-lg-none" aria-label="Open menu"><i class="icofont-navigation-menu" aria-hidden="true"></i></button>');
     $('body').append('<div class="mobile-nav-overly"></div>');
 
     $(document).on('click', '.mobile-nav-toggle', function(e) {
@@ -141,17 +143,8 @@
   $('.back-to-top').click(function() {
     $('html, body').animate({
       scrollTop: 0
-    }, 1500, 'easeInOutExpo');
+    }, scrollDuration, 'easeInOutExpo');
     return false;
-  });
-
-  // Skills section
-  $('.skills-content').waypoint(function() {
-    $('.progress .progress-bar').each(function() {
-      $(this).css("width", $(this).attr("aria-valuenow") + '%');
-    });
-  }, {
-    offset: '80%'
   });
 
   // Init AOS

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://startechcom.vercel.app/sitemap.xml
